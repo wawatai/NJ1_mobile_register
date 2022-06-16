@@ -1,0 +1,372 @@
+@charset "UTF-8";
+button:disabled {
+  background: #2b2b2b !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: #545454 !important;
+  pointer-events: none;
+}
+
+input:disabled {
+  border: none !important;
+  background: #272727 !important;
+}
+
+.jumpWindow .title .close {
+  background: url("../images/icon/close_b.png") no-repeat;
+  background-size: contain;
+}
+
+.jumpWindow.registerWindow .title .icon {
+  background: url("../images/icon/loginIC.png") no-repeat;
+  background-size: 100%;
+}
+
+.jumpWindow .eye {
+  background: url("../images/icon/svg/eye.svg") no-repeat;
+  background-size: 100%;
+}
+
+.jumpWindow .date_ic {
+  background: url("../images/icon/date_ic.png") no-repeat;
+  background-size: contain;
+}
+
+.jumpWindow .line_ic {
+  background: url("../images/icon/line_ic.png") no-repeat;
+  background-size: contain;
+}
+
+.bg {
+  background: url("../images/bg.png") no-repeat;
+  background-size: cover;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "微軟正黑體";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: "微軟正黑體";
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0px;
+  font-family: "微軟正黑體";
+}
+
+select, input {
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "微軟正黑體";
+}
+
+main {
+  display: block;
+}
+
+html, body {
+  width: 100%;
+  height: auto;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html body {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body main {
+  width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 45px 0 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+}
+html body .bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+html body .filter {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00000066;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+  display: none;
+}
+html body .filter.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+html body .filter .jumpWindow {
+  background: #181818;
+  border-radius: 16px;
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: solid 1px #ffc13c;
+}
+html body .filter .jumpWindow.display {
+  display: block;
+}
+html body .filter .jumpWindow .title {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(#ffae00), to(#fec026));
+  background: linear-gradient(to right, #ffae00 0%, #fec026 100%);
+  color: #181818;
+  font-size: 4vw;
+  font-weight: bold;
+  letter-spacing: 2px;
+  position: relative;
+  border-radius: 13px 13px 0 0;
+}
+html body .filter .jumpWindow .title i {
+  width: 4.73vw;
+  height: 4.73vw;
+  position: absolute;
+  right: 3.5vw;
+}
+html body .filter .jumpWindow.registerWindow {
+  width: 92.27vw;
+  height: auto;
+}
+html body .filter .jumpWindow.registerWindow .title .icon {
+  width: 8.6vw;
+  height: 8.6vw;
+  margin-right: 4vw;
+}
+html body .filter .jumpWindow.registerWindow form {
+  width: 100%;
+  height: auto;
+  max-height: 66vh;
+  overflow-y: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 24px 16px;
+}
+html body .filter .jumpWindow.registerWindow form label {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 9vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 13px 0 20px;
+}
+html body .filter .jumpWindow.registerWindow form label:nth-last-of-type(1), html body .filter .jumpWindow.registerWindow form label:nth-last-of-type(2) {
+  margin-bottom: 4vw;
+}
+html body .filter .jumpWindow.registerWindow form label em {
+  position: absolute;
+  left: 0;
+  color: #e11515;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.registerWindow form label input {
+  width: 100%;
+  height: 9.87vw;
+  background: #101010;
+  border-radius: 1vw;
+  border: solid 1px #ffc13c;
+  color: #ffffff;
+  font-size: 3.4vw;
+  font-weight: bold;
+  padding-left: 4vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .filter .jumpWindow.registerWindow form label input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+html body .filter .jumpWindow.registerWindow form label input::-moz-placeholder {
+  color: #ffffff;
+}
+html body .filter .jumpWindow.registerWindow form label input:-ms-input-placeholder {
+  color: #ffffff;
+}
+html body .filter .jumpWindow.registerWindow form label input::-ms-input-placeholder {
+  color: #ffffff;
+}
+html body .filter .jumpWindow.registerWindow form label input::placeholder {
+  color: #ffffff;
+}
+html body .filter .jumpWindow.registerWindow form label input.line {
+  padding-left: 12vw;
+}
+html body .filter .jumpWindow.registerWindow form label .remind {
+  position: absolute;
+  left: 4px;
+  top: 10.5vw;
+  width: 105%;
+  color: #e11515;
+  font-size: 2vw;
+  font-weight: bold;
+  line-height: 3.7vw;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+html body .filter .jumpWindow.registerWindow form label.isCheck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html body .filter .jumpWindow.registerWindow form label.isCheck input[type=checkbox] {
+  width: 4.5vw;
+  height: 4.5vw;
+  margin-right: 10px;
+}
+html body .filter .jumpWindow.registerWindow form label.isCheck p {
+  color: #ffc13c;
+  font-size: 3.4vw;
+  font-weight: bold;
+}
+html body .filter .jumpWindow.registerWindow form label.isCheck p.ruleBtn {
+  color: #fb770a;
+  margin-top: 2vw;
+}
+html body .filter .jumpWindow.registerWindow form label .eye {
+  position: absolute;
+  right: 20px;
+  width: 6.13vw;
+  height: 4.26vw;
+}
+html body .filter .jumpWindow.registerWindow form label .date_ic {
+  position: absolute;
+  right: 25px;
+  width: 4vw;
+  height: 4vw;
+}
+html body .filter .jumpWindow.registerWindow form label .line_ic {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  left: 23px;
+}
+html body .filter .jumpWindow.registerWindow form .checkBtn {
+  width: 100%;
+  height: 9.87vw;
+  background: -webkit-gradient(linear, left top, right top, from(#ff4b33), color-stop(98%, #d8001f));
+  background: linear-gradient(to right, #ff4b33 0%, #d8001f 98%);
+  border-radius: 1vw;
+  border: none;
+  color: #ffffff;
+  font-size: 4vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-bottom: 2px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+html body .filter .jumpWindow.registerWindow form .checkBtn:active, html body .filter .jumpWindow.registerWindow form .checkBtn.active {
+  background: #b9001b;
+}

@@ -1,0 +1,70 @@
+//主要字色
+$mainWord_1: #ffc13c;
+
+//可選字色
+$click: #fb770a;
+
+//小提示字色
+$remind_Sp: #e11515;
+
+//彈窗背景透明底
+$filter: #00000066;
+
+//jumpWindow
+$jumpWindow_Title: #181818;
+$jumpWindow_TitleBG: linear-gradient(to right,#ffae00 0%,#fec026 100%);
+$jumpWindow_BG: #181818;
+$jumpWindow_Border: #ffc13c;
+
+
+//button
+
+
+//常用
+@mixin mainBtn {
+    background: linear-gradient(to right,#ff4b33 0%,#d8001f 98%);
+    border-radius: 1vw;
+    border: none;
+    color: #ffffff;
+    font-size: 4vw;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-bottom: 2px;
+
+    &:active,&.active {
+        background: #b9001b;
+    }
+}
+
+button:disabled {
+    background: #2b2b2b !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #545454 !important;
+    pointer-events: none;
+}
+
+
+//input
+
+
+//常用input
+@mixin mainInput {
+    background: #101010;
+    border-radius: 1vw;
+    border: solid 1px #ffc13c;
+    color: #ffffff;
+    font-size: 3.4vw;
+    font-weight: bold;
+    padding-left: 4vw;
+    box-sizing: border-box;
+
+    &::placeholder {
+        color: #ffffff;
+    }
+}
+
+input:disabled {
+    border: none !important;
+    background: #272727 !important;
+}

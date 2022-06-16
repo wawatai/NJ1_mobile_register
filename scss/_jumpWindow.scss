@@ -1,0 +1,175 @@
+//彈窗
+.filter {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: $filter;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    display: none;
+
+    &.display {
+        display: flex;
+    }
+
+    .jumpWindow {
+        background: $jumpWindow_BG;
+        border-radius: 16px;
+        // overflow: hidden;
+        display: none;
+        box-sizing: border-box;
+        border: solid 1px $jumpWindow_Border;
+
+        &.display {
+            display: block;
+        }
+
+        .title {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $jumpWindow_TitleBG;
+            color: $jumpWindow_Title;
+            font-size: 4vw;
+            font-weight: bold;
+            letter-spacing: 2px;
+            position: relative;
+            border-radius: 13px 13px 0 0;
+    
+            i {
+                width: 4.73vw;
+                height: 4.73vw;
+                position: absolute;
+                right: 3.5vw;
+            }
+        }
+
+        //註冊
+        &.registerWindow {
+            width: 92.27vw;
+            height: auto;
+
+            .title {
+
+                .icon {
+                    width: 8.6vw;
+                    height: 8.6vw;
+                    margin-right: 4vw;
+                }
+            }
+
+            form {
+                width: 100%;
+                height: auto;
+                max-height: 66vh;
+                overflow-y: auto;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 24px 16px;
+
+                label {
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    margin-bottom: 9vw;
+                    display: flex;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding: 0 13px 0 20px;
+
+                    &:nth-last-of-type(1),
+                    &:nth-last-of-type(2) {
+                        margin-bottom: 4vw;
+                    }
+
+                    em {
+                        position: absolute;
+                        left: 0;
+                        color: $remind_Sp;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 9.87vw;
+                        @include mainInput;
+
+                        &.line {
+                            padding-left: 12vw;
+                        }
+                    }
+
+                    .remind {
+                        position: absolute;
+                        left: 4px;
+                        top: 10.5vw;
+                        width: 105%;
+                        color: $remind_Sp;
+                        font-size: 2vw;
+                        font-weight: bold;
+                        line-height: 3.7vw;
+                        transform: scale(0.9);
+                    }
+
+                    &.isCheck {
+                        display: flex;
+                        align-items: center;
+
+                        input[type = checkbox]{
+                            width: 4.5vw;
+                            height: 4.5vw;
+                            margin-right: 10px;
+                        }
+
+                        p {
+                            color: $mainWord_1;
+                            font-size: 3.4vw;
+                            font-weight: bold;
+                            
+                            &.ruleBtn {
+                                color: $click;
+                                margin-top: 2vw;
+                            }
+                        }
+                    }
+
+                    .eye {
+                        position: absolute;
+                        right: 20px;
+                        width: 6.13vw;
+                        height: 4.26vw;
+                    }
+
+                    .date_ic {
+                        position: absolute;
+                        right: 25px;
+                        width: 4vw;
+                        height: 4vw;
+                    }
+
+                    .line_ic {
+                        position: absolute;
+                        width: 8vw;
+                        height: 8vw;
+                        left: 23px;
+                    }
+                }
+
+                .checkBtn {
+                    width: 100%;
+                    height: 9.87vw;
+                    @include mainBtn;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}

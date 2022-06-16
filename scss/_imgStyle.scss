@@ -1,0 +1,29 @@
+//jumpWindow .close_ic
+.jumpWindow .title .close {
+    background: url('../images/icon/close_b.png') no-repeat;
+    background-size: contain;
+}
+//jumpWindow.login login_ic
+.jumpWindow.registerWindow .title .icon {
+    background: url('../images/icon/loginIC.png') no-repeat;
+    background-size: 100%;
+}
+//jumpWindow .eye
+.jumpWindow .eye {
+    background: url('../images/icon/svg/eye.svg') no-repeat;
+    background-size: 100%;
+}
+.jumpWindow .date_ic {
+    background: url('../images/icon/date_ic.png') no-repeat;
+    background-size: contain;
+}
+.jumpWindow .line_ic {
+    background: url('../images/icon/line_ic.png') no-repeat;
+    background-size: contain;
+}
+
+//bg
+.bg {
+    background: url('../images/bg.png') no-repeat;
+    background-size: cover;
+}
