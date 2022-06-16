@@ -8,6 +8,12 @@ button:disabled {
   pointer-events: none;
 }
 
+button:disabled {
+  border: none !important;
+  background: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
 input:disabled {
   border: none !important;
   background: #272727 !important;
@@ -351,6 +357,25 @@ html body .filter .jumpWindow.registerWindow form label .line_ic {
   width: 8vw;
   height: 8vw;
   left: 23px;
+}
+html body .filter .jumpWindow.registerWindow form label .code {
+  width: auto;
+  height: 8vw;
+  position: absolute;
+  right: 17px;
+  background: #ffbd38;
+  border-radius: 3px;
+  color: #000000;
+  font-size: 4vw;
+  font-weight: bold;
+  padding: 0 5px;
+  padding-bottom: 2px;
+  font-size: 2vw;
+  padding: 0 7px;
+}
+html body .filter .jumpWindow.registerWindow form label .code:active, html body .filter .jumpWindow.registerWindow form label .code.active {
+  background: #ff4719;
+  color: #ffffff;
 }
 html body .filter .jumpWindow.registerWindow form .checkBtn {
   width: 100%;

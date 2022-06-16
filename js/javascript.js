@@ -1,0 +1,10 @@
+$(function(){
+    $(".phone").focus(function(){
+        $(".code")
+        .attr("disabled",false);
+    })
+    $(".phone").blur(function(){
+        $(".code")
+        .attr("disabled",true);
+    })
+})

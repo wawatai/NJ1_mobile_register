@@ -161,6 +161,16 @@
                         height: 8vw;
                         left: 23px;
                     }
+
+                    .code {
+                        width: auto;
+                        height: 8vw;
+                        position: absolute;
+                        right: 17px;
+                        @include secondBtn;
+                        font-size: 2vw;
+                        padding: 0 7px;
+                    }
                 }
 
                 .checkBtn {
